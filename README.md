@@ -1,36 +1,35 @@
-# Next.js + Firebase Blog App
+# VsuCNHSnews - College of Natural Health Sciences News Website
 
-This repository contains the source code for a dynamic blog application built using Next.js and Firebase. This project demonstrates the use of server-side rendering and static generation features of Next.js along with Firebase for authentication, database, and hosting.
+This repository contains the source code for **VsuCNHSnews**, a dynamic news website built for the **College of Natural Health Sciences (CNHS)** at VSU. The project uses **Next.js** for the frontend and **Firebase** for authentication, database, and media storage. It showcases real-time news updates, user authentication, and a modern, responsive design.
 
 ## Features
 
-- **User Authentication**: Login and registration functionality using Firebase Authentication.
-- **Real-time Data**: Posts are stored and retrieved from Firebase Firestore in real-time.
-- **Responsive Design**: Built using CSS Modules for a responsive layout that adjusts to different screen sizes.
-- **SEO Friendly**: Utilizes Next.js's SSR capabilities for improved SEO.
+- **User Authentication**: Authors can log in and create news posts using Firebase Authentication.
+- **Real-time News Updates**: News posts are stored in Firebase Firestore and fetched in real-time.
+- **Responsive Design**: Fully responsive UI built with Tailwind CSS for seamless experience across devices.
+- **SEO Optimized**: Utilizes Next.js static generation (SSG) and server-side rendering (SSR) for improved search engine visibility.
+- **Media Upload**: Cover photos for news articles are uploaded and served via Firebase Storage.
+- **Latest News Cache**: Frequently accessed latest news posts are cached for faster retrieval.
 
 ## Prerequisites
 
-Before you begin, ensure you have met the following requirements:
-- Node.js 12.x or higher
-- npm/yarn installed
-- Firebase account
+Before you begin, ensure you have:
 
-The application makes use of the following:
+- Node.js 14.x or higher
+- npm or yarn installed
+- Firebase account with Firestore, Authentication, and Storage enabled
 
-- **Firebase Storage** - for storing cover images for posts,
-- **Firestore Database** - for saving post details, and
-- **Firebase Authentication** - for authenticating post authors.
+## Project Structure
+
+- **/src/app** – Next.js application pages and components
+- **/src/firebase.ts** – Firebase client initialization
+- **/public** – Static assets (images, icons)
+- **/types.ts** – TypeScript types
+- **/tailwind.config.ts** – Tailwind CSS configuration
+- **/next.config.mjs** – Next.js configuration
 
 ## Getting Started
 
-- Clone the repository and run `npm i` to install the project dependencies.
-- Copy your firebase config into the `firebase.ts` file.
-- Set up the Firebase features on your console.
+VsuCNHSnews is hosted on **Vercel** for live access. To run or develop locally, follow these steps:
 
-## Blog
-
-- [How to Create a Blog with Next.js and Firebase](https://theankurtyagi.com/how-to-create-blog-with-nextjs-and-firebase/)
-
-
-
+1. Clone the repository:
